@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+/* Class-based dark mode (toggle, not OS preference) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* Surfaces & ink — warm, calm light canvas */
+  --background: #f7f7f5;
+  --surface: #ffffff;
+  --surface-2: #f1f1ee;
+  --foreground: #15171c;
+  --muted: #5b6068;
+  --faint: #8b9099;
+  --border: #e6e6e1;
+  --border-strong: #d6d6cf;
+
+  /* Grevya brand — pulled from the logo */
+  --grevya-orange: #f0481f;
+  --grevya-amber: #f9b50b;
+  --grevya-green: #7cb928;
+  --grevya-blue: #15a3e6;
+
+  --ring: rgba(21, 163, 230, 0.45);
+}
+
+.dark {
+  --background: #0a0b0d;
+  --surface: #131519;
+  --surface-2: #1a1d22;
+  --foreground: #ecedef;
+  --muted: #9aa0a8;
+  --faint: #6b717a;
+  --border: #23262c;
+  --border-strong: #2e323a;
+
+  --grevya-orange: #ff5e36;
+  --grevya-amber: #ffc233;
+  --grevya-green: #97d83f;
+  --grevya-blue: #38b6f5;
+
+  --ring: rgba(56, 182, 245, 0.5);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+
+  --color-orange: var(--grevya-orange);
+  --color-amber: var(--grevya-amber);
+  --color-green: var(--grevya-green);
+  --color-blue: var(--grevya-blue);
+
+  --font-sans: var(--font-sora);
+  --font-body: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --radius-card: 18px;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--grevya-blue);
+  color: #fff;
+}
+
+/* Utilities */
+.font-display {
+  font-family: var(--font-sora), system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+.font-mono {
+  font-family: var(--font-geist-mono), monospace;
+}
+
+.label-mono {
+  font-family: var(--font-geist-mono), monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.7rem;
+}
+
+/* Hide scrollbar for horizontal rails */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes float-shard {
+  0%, 100% { transform: translateY(0) rotate(var(--r, 0deg)); }
+  50% { transform: translateY(-18px) rotate(calc(var(--r, 0deg) + 6deg)); }
+}
+
+@keyframes grid-pan {
+  0% { background-position: 0 0; }
+  100% { background-position: 40px 40px; }
+}
