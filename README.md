@@ -49,6 +49,8 @@ Runtime URL/status overrides made on `/admin` live in `localStorage` via
 | Internal Onboarding   | https://grevya-onboarding.vercel.app/    |
 | Grevya Naturals       | https://grevyanaturals.vercel.app/       |
 | Grevya Virtual Try-On | https://grevya-virtualtryon.vercel.app/  |
+| AI Video Interviewer  | https://grevya-ai-video-interviewer.vercel.app/ |
+| PatientPilot AI       | https://grevya-patientcare.vercel.app/   |
 
 ## Design system
 

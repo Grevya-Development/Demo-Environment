@@ -75,7 +75,7 @@ export function Hero() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green opacity-75" />
             <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-green" />
           </span>
-          4 platforms live · 3 on the roadmap
+          6 platforms live · 2 on the roadmap
           <span className="transition-transform group-hover:translate-x-0.5">→</span>
         </motion.a>
 

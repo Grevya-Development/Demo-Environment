@@ -14,7 +14,7 @@ export function Roadmap() {
         <SectionHeading
           eyebrow="Roadmap"
           title="What's coming to the ecosystem"
-          description="Three new platforms in active development — expanding Grevya across sales, hiring, and healthcare."
+          description="New platforms in active development — expanding Grevya across sales and healthcare."
         />
 
         <RevealGroup className="mt-12 grid gap-5 md:grid-cols-3">

@@ -8,7 +8,7 @@ export function Stats() {
   return (
     <section className="border-y border-border bg-surface/50">
       <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8 sm:py-16">
-        <RevealGroup className="grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-4">
+        <RevealGroup className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3">
           {STATS.map((s) => (
             <motion.div key={s.label} variants={fadeUp} className="relative">
               <div className="font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">

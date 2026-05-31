@@ -119,12 +119,31 @@ export const PRODUCTS: Product[] = [
     name: "Grevya AI Video Interviewer",
     mark: "Vi",
     category: "Hiring",
-    status: "Coming Soon",
+    status: "Active",
     description:
       "AI-powered hiring and candidate screening that runs structured video interviews and surfaces the strongest applicants.",
     features: ["Video Screening", "Scoring", "Candidate Insights", "ATS Sync"],
-    cta: "Coming Soon",
+    url: "https://grevya-ai-video-interviewer.vercel.app/",
+    cta: "Launch Application",
     accent: "blue",
+  },
+  {
+    id: "patientpilot",
+    name: "Grevya PatientPilot AI",
+    mark: "Pp",
+    category: "Healthcare AI",
+    status: "Active",
+    description:
+      "An AI hospital concierge and intelligent patient-routing platform — a 24/7 digital receptionist that recognizes returning patients, assesses symptoms by voice or text, and routes them to the right specialist.",
+    features: [
+      "Patient Recognition",
+      "AI Symptom Assessment",
+      "Intelligent Routing",
+      "Self-Service Kiosks",
+    ],
+    url: "https://grevya-patientcare.vercel.app/",
+    cta: "Launch Application",
+    accent: "green",
   },
   {
     id: "radiology",
@@ -164,10 +183,9 @@ export interface Stat {
 }
 
 export const STATS: Stat[] = [
-  { label: "Total Products", value: "7", detail: "4 live · 3 on the roadmap" },
-  { label: "Active Platforms", value: "4", detail: "Shipping to production" },
-  { label: "Team Members", value: "52", detail: "Across 5 business units" },
-  { label: "Monthly Users", value: "31.6K", detail: "+18% quarter over quarter" },
+  { label: "Total Products", value: "8", detail: "6 live · 2 on the roadmap" },
+  { label: "Active Platforms", value: "6", detail: "Shipping to production" },
+  { label: "Team Members", value: "60", detail: "Across 5 business units" },
 ];
 
 export interface Activity {
@@ -178,6 +196,7 @@ export interface Activity {
 }
 
 export const ACTIVITY: Activity[] = [
+  { product: "Grevya PatientPilot AI", accent: "green", event: "PatientPilot AI went live at partner hospitals", time: "30m ago" },
   { product: "Grevya Virtual Try-On", accent: "orange", event: "Virtual Try-On launched to production", time: "1h ago" },
   { product: "Irookee", accent: "blue", event: "New analytics dashboard deployed", time: "2h ago" },
   { product: "Grevya Naturals", accent: "green", event: "Spring wellness collection went live", time: "5h ago" },
