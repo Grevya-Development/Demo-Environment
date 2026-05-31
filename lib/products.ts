@@ -6,6 +6,7 @@ export type Category =
   | "AI Platform"
   | "Internal Operations"
   | "Consumer Brand"
+  | "Retail AI"
   | "Sales & CRM"
   | "Hiring"
   | "Healthcare AI";
@@ -84,6 +85,24 @@ export const PRODUCTS: Product[] = [
     accent: "green",
   },
   {
+    id: "virtualtryon",
+    name: "Grevya Virtual Try-On",
+    mark: "Vt",
+    category: "Retail AI",
+    status: "Active",
+    description:
+      "AI-powered virtual try-on that lets shoppers preview products on themselves in real time — boosting confidence and conversion before checkout.",
+    features: [
+      "Virtual Try-On",
+      "AR Preview",
+      "Product Visualization",
+      "Shopper Conversion",
+    ],
+    url: "https://grevya-virtualtryon.vercel.app/",
+    cta: "Launch Application",
+    accent: "orange",
+  },
+  {
     id: "crm",
     name: "Grevya CRM",
     mark: "Cr",
@@ -125,6 +144,7 @@ export const CATEGORIES: Category[] = [
   "AI Platform",
   "Internal Operations",
   "Consumer Brand",
+  "Retail AI",
   "Sales & CRM",
   "Hiring",
   "Healthcare AI",
@@ -144,10 +164,10 @@ export interface Stat {
 }
 
 export const STATS: Stat[] = [
-  { label: "Total Products", value: "6", detail: "3 live · 3 on the roadmap" },
-  { label: "Active Platforms", value: "3", detail: "Shipping to production" },
-  { label: "Team Members", value: "48", detail: "Across 4 business units" },
-  { label: "Monthly Users", value: "27.4K", detail: "+18% quarter over quarter" },
+  { label: "Total Products", value: "7", detail: "4 live · 3 on the roadmap" },
+  { label: "Active Platforms", value: "4", detail: "Shipping to production" },
+  { label: "Team Members", value: "52", detail: "Across 5 business units" },
+  { label: "Monthly Users", value: "31.6K", detail: "+18% quarter over quarter" },
 ];
 
 export interface Activity {
@@ -158,6 +178,7 @@ export interface Activity {
 }
 
 export const ACTIVITY: Activity[] = [
+  { product: "Grevya Virtual Try-On", accent: "orange", event: "Virtual Try-On launched to production", time: "1h ago" },
   { product: "Irookee", accent: "blue", event: "New analytics dashboard deployed", time: "2h ago" },
   { product: "Grevya Naturals", accent: "green", event: "Spring wellness collection went live", time: "5h ago" },
   { product: "Internal Onboarding", accent: "amber", event: "12 new hires completed onboarding", time: "Yesterday" },

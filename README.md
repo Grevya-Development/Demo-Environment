@@ -45,9 +45,10 @@ Runtime URL/status overrides made on `/admin` live in `localStorage` via
 
 | Product             | URL                                      |
 | ------------------- | ---------------------------------------- |
-| Irookee             | https://irookee-phi.vercel.app/          |
-| Internal Onboarding | https://grevya-onboarding.vercel.app/    |
-| Grevya Naturals     | https://grevyanaturals.vercel.app/       |
+| Irookee               | https://irookee-phi.vercel.app/          |
+| Internal Onboarding   | https://grevya-onboarding.vercel.app/    |
+| Grevya Naturals       | https://grevyanaturals.vercel.app/       |
+| Grevya Virtual Try-On | https://grevya-virtualtryon.vercel.app/  |
 
 ## Design system
 

@@ -11,6 +11,7 @@ const COLUMNS = [
       { label: "Irookee", href: "#products" },
       { label: "Internal Onboarding", href: "#products" },
       { label: "Grevya Naturals", href: "#products" },
+      { label: "Virtual Try-On", href: "#products" },
       { label: "Roadmap", href: "#roadmap" },
     ],
   },
