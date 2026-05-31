@@ -14,13 +14,13 @@
   --border: #e6e6e1;
   --border-strong: #d6d6cf;
 
-  /* Grevya brand — pulled from the logo */
-  --grevya-orange: #f0481f;
-  --grevya-amber: #f9b50b;
-  --grevya-green: #7cb928;
-  --grevya-blue: #15a3e6;
+  /* Grevya brand — official logo values */
+  --grevya-orange: #f25022;
+  --grevya-amber: #ffb902;
+  --grevya-green: #80ba01;
+  --grevya-blue: #02a4ef;
 
-  --ring: rgba(21, 163, 230, 0.45);
+  --ring: rgba(2, 164, 239, 0.45);
 }
 
 .dark {
@@ -33,12 +33,12 @@
   --border: #23262c;
   --border-strong: #2e323a;
 
-  --grevya-orange: #ff5e36;
-  --grevya-amber: #ffc233;
-  --grevya-green: #97d83f;
-  --grevya-blue: #38b6f5;
+  --grevya-orange: #ff6a44;
+  --grevya-amber: #ffc740;
+  --grevya-green: #98d521;
+  --grevya-blue: #2bb6ff;
 
-  --ring: rgba(56, 182, 245, 0.5);
+  --ring: rgba(43, 182, 255, 0.5);
 }
 
 @theme inline {
